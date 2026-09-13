@@ -3,7 +3,7 @@
 ## Structure
 - index.html — main portfolio
 - blog/index.html — first SEO-friendly article
-- images/ — 14 project images, normalized to 800x800 WebP
+- images/ — 15 project images, normalized to 800x800 WebP
 - robots.txt / sitemap.xml — basic SEO files
 
 ## Adding a future blog post
