@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://ilma-portfolio-ruddy.vercel.app/sitemap.xml
