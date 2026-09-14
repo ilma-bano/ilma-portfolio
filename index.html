@@ -1,51 +1,300 @@
-<!doctype html><html lang="en"><head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="ILMA BANO — Graphic Designer and Digital Marketer portfolio.">
-<title>ILMA BANO — Graphic Designer × Digital Marketer</title>
-<style>
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap');
-:root{--bg:#050c0e;--panel:#0b1719;--text:#eff9f6;--muted:#91aaa5;--line:rgba(239,249,246,.13);--mint:#a7f3d0;--aqua:#8be9e2;--cream:#eee8dc}
-*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}body{background:var(--bg);color:var(--text);font-family:Manrope,Arial,sans-serif;overflow-x:hidden}a{color:inherit}
-nav{position:fixed;z-index:10;top:18px;left:50%;transform:translateX(-50%);width:92%;max-width:1180px;height:64px;border:1px solid var(--line);border-radius:40px;background:rgba(4,12,14,.72);backdrop-filter:blur(20px);display:flex;align-items:center;justify-content:space-between;padding:0 18px 0 22px}.brand{display:flex;align-items:center;gap:11px;text-decoration:none}.logo{width:38px;height:38px;border:1px solid rgba(167,243,208,.55);border-radius:50%;display:grid;place-items:center;color:var(--mint);font-size:10px;font-weight:800}.brand b{font-size:12px;letter-spacing:3px}nav ul{display:flex;gap:24px;list-style:none}nav li a{font-size:11px;text-decoration:none;color:#b9cbc7;font-weight:700}nav li a:hover{color:var(--mint)}.navbtn{background:var(--mint);color:#061012;text-decoration:none;padding:11px 16px;border-radius:30px;font-size:10px;font-weight:800}
-.hero{height:100svh;min-height:700px;display:flex;align-items:center;position:relative;overflow:hidden;background:radial-gradient(circle at 78% 35%,rgba(75,180,170,.2),transparent 27%),linear-gradient(135deg,#08191b,#02090a 75%)}.grid{position:absolute;inset:0;background-image:linear-gradient(rgba(150,230,220,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(150,230,220,.035) 1px,transparent 1px);background-size:76px 76px}.orb{position:absolute;width:58vw;height:58vw;right:-18vw;top:-25vw;border-radius:50%;background:radial-gradient(circle,rgba(139,233,226,.13),transparent 65%)}.hero-in{width:86%;max-width:1180px;margin:auto;position:relative;z-index:2}.eyebrow,.kicker{font-size:10px;letter-spacing:4px;color:var(--mint);font-weight:800}.eyebrow{margin-bottom:25px}h1{font:500 clamp(78px,14vw,180px)/.76 "Playfair Display",serif;letter-spacing:-7px}h1 span{display:block;color:#a0b5b1}h1 em{font-style:italic}.hero p{max-width:610px;color:#9db4b0;font-size:15px;line-height:1.85;margin-top:35px}.buttons{display:flex;gap:10px;margin-top:28px;flex-wrap:wrap}.btn{padding:13px 18px;border:1px solid var(--line);border-radius:30px;text-decoration:none;font-size:11px;font-weight:800}.primary{background:var(--mint);color:#061012;border-color:var(--mint)}.scroll{position:absolute;bottom:28px;right:7%;font-size:9px;letter-spacing:3px;color:#607a76}
-section{padding:125px 7%}.head{display:flex;justify-content:space-between;gap:50px;align-items:end;margin-bottom:52px}.title{font:500 clamp(48px,7vw,92px)/.9 "Playfair Display",serif;letter-spacing:-3px;margin-top:13px}.title i{color:#718986}.intro{max-width:460px;color:var(--muted);font-size:14px;line-height:1.85}
-.about{background:#061214}.about-grid{display:grid;grid-template-columns:.75fr 1.25fr;gap:70px}.identity{min-height:480px;border:1px solid var(--line);padding:30px;position:relative;overflow:hidden;background:radial-gradient(circle at 65% 25%,rgba(167,243,208,.12),transparent 25%),linear-gradient(145deg,#112526,#071012)}.identity .big{font:190px/.7 "Playfair Display";position:absolute;left:30px;top:40%;color:#d3ebe5}.identity small,.identity-bottom{font-size:9px;letter-spacing:3px;color:#78938e}.identity-bottom{position:absolute;bottom:30px}.copy{border-top:1px solid var(--line);padding-top:24px}.copy p{font-size:18px;line-height:1.9;color:#b6c7c3;margin-bottom:22px}.copy strong{color:#fff}
-.skills{background:#03090a}.skill-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.skill{min-height:240px;padding:27px;border:1px solid var(--line);background:linear-gradient(145deg,#102224,#071012);transition:.4s}.skill:hover{transform:translateY(-8px);border-color:rgba(167,243,208,.4)}.skill small{color:#607b76;letter-spacing:3px}.skill h3{font:500 30px "Playfair Display";margin-top:72px}.skill p{color:#819995;font-size:12px;line-height:1.7;margin-top:10px}
-.projects{background:#020708}.project-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.project{background:#071214;border:1px solid var(--line);overflow:hidden;transition:.4s}.project:hover{transform:translateY(-8px);border-color:rgba(167,243,208,.4);box-shadow:0 30px 70px rgba(0,0,0,.35)}.pic{aspect-ratio:1;background:#ebebe6}.pic img{width:100%;height:100%;object-fit:contain;display:block}.info{padding:20px 20px 23px}.info small{font-size:9px;letter-spacing:3px;color:#65817d}.info h3{font:500 25px "Playfair Display";margin:8px 0}.info p{font-size:12px;line-height:1.7;color:#819995}
-.water{min-height:650px;position:relative;overflow:hidden;background:linear-gradient(180deg,#08282c,#0a5155 48%,#03191c)}.water:before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse at 50% 0,rgba(220,255,250,.18),transparent 46%)}.surface{position:absolute;top:0;left:-10%;width:120%;height:110px;background:repeating-radial-gradient(ellipse at 50% 0,rgba(225,255,250,.2) 0 2px,transparent 3px 24px)}.beam{position:absolute;top:-20%;height:135%;width:16%;background:linear-gradient(rgba(219,255,250,.12),transparent);filter:blur(10px);transform:rotate(13deg)}.beam:nth-child(1){left:14%}.beam:nth-child(2){left:44%;transform:rotate(-10deg);opacity:.6}.beam:nth-child(3){left:72%;opacity:.4}.fish{position:absolute;width:170px;opacity:.34;filter:drop-shadow(0 8px 15px rgba(0,0,0,.4))}.fa{top:55%;left:-190px;animation:swim 23s linear infinite}.fb{top:34%;left:110%;transform:scale(.58) scaleX(-1);animation:back 29s linear infinite}.fc{top:77%;left:-140px;transform:scale(.38);animation:swim 34s linear infinite}.bubble{position:absolute;border:1px solid rgba(220,255,250,.45);border-radius:50%;bottom:-30px;animation:rise 8s linear infinite}.b1{left:20%;width:8px;height:8px}.b2{left:52%;width:12px;height:12px;animation-delay:2s}.b3{left:76%;width:6px;height:6px;animation-delay:4s}.water-in{position:relative;z-index:3;max-width:760px}.water .intro{color:#a1c5c0}
-.tools{background:#071113}.toolbox{display:flex;gap:10px;flex-wrap:wrap;justify-content:center;max-width:950px;margin:auto}.tool{padding:13px 17px;border:1px solid var(--line);border-radius:30px;color:#a7bfbb;font-size:12px}.tool:hover{color:var(--mint);border-color:rgba(167,243,208,.4)}
-.blog{background:var(--cream);color:#102020}.blog .kicker{color:#637873}.blog .title{color:#102020}.blogbox{display:grid;grid-template-columns:1.15fr .85fr;min-height:380px;border:1px solid rgba(16,32,32,.15)}.blog-art{padding:42px;background:linear-gradient(145deg,#092326,#164343);display:flex;align-items:end;color:#e9f7f3}.blog-art h3{font:500 clamp(38px,5vw,68px)/.96 "Playfair Display"}.blog-copy{padding:45px;display:flex;flex-direction:column;justify-content:center}.blog-copy p{color:#647572;font-size:14px;line-height:1.8}.blog-copy a{margin-top:24px;font-weight:800;text-decoration:none}
-.contact{text-align:center;background:#020607}.contact .intro{margin:24px auto}.mail{font:500 clamp(28px,5vw,58px) "Playfair Display";text-decoration:none}.mail:hover{color:var(--mint)}footer{padding:25px 7%;border-top:1px solid var(--line);display:flex;justify-content:space-between;color:#617a76;font-size:10px;letter-spacing:1px}
-@keyframes swim{from{left:-190px}to{left:110%}}@keyframes back{from{left:110%}to{left:-190px}}@keyframes rise{from{bottom:-30px;opacity:0}15%{opacity:.8}to{bottom:105%;opacity:0;transform:translateX(40px)}}
-@media(max-width:900px){nav ul{display:none}.navbtn{display:none}.head{display:block}.intro{margin-top:20px}.about-grid{grid-template-columns:1fr}.skill-grid,.project-grid{grid-template-columns:repeat(2,1fr)}}
-@media(max-width:600px){section{padding:90px 5%}h1{font-size:70px;letter-spacing:-4px}.hero-in{width:90%}.skill-grid,.project-grid{grid-template-columns:1fr}.identity{min-height:360px}.identity .big{font-size:135px}.copy p{font-size:16px}.blogbox{grid-template-columns:1fr}.blog-art{min-height:300px}footer{display:block;text-align:center}footer span{display:block;margin-top:8px}}
-</style></head><body>
-<nav><a class="brand" href="#home"><span class="logo">IB</span><b>ILMA BANO</b></a><ul><li><a href="#about">About</a></li><li><a href="#skills">Skills</a></li><li><a href="#projects">Work</a></li><li><a href="blog/">Blog</a></li><li><a href="#contact">Contact</a></li></ul><a class="navbtn" href="#contact">Let's create</a></nav>
-<header class="hero" id="home"><div class="grid"></div><div class="orb"></div><div class="hero-in"><div class="eyebrow">GRAPHIC DESIGN × DIGITAL MARKETING</div><h1><span>ILMA</span><em>BANO.</em></h1><p>I turn ideas into visual experiences — from graphic design and brand pieces to digital marketing, content and web-ready creative work.</p><div class="buttons"><a class="btn primary" href="#projects">Explore my work ↓</a><a class="btn" href="#contact">Work with me</a></div></div><div class="scroll">SCROLL TO DISCOVER</div></header>
-<section class="about" id="about"><div class="head"><div><div class="kicker">01 / THE CREATIVE</div><h2 class="title">Designed with <i>intention.</i></h2></div><p class="intro">A cinematic portfolio built around visual thinking, clear communication and practical digital work.</p></div><div class="about-grid"><div class="identity"><small>ILMA BANO / CREATIVE</small><div class="big">I.</div><div class="identity-bottom">GRAPHIC DESIGNER · DIGITAL MARKETER</div></div><div class="copy"><p><strong>I'm Ilma Bano</strong> — a creative learner working across Graphic Design and Digital Marketing. I enjoy turning rough ideas into visuals that feel clear, polished and useful.</p><p>My work includes Photoshop compositions, CorelDRAW layouts, branding, UI concepts, social creatives and content-focused design. I also enjoy making reels.</p><p>Currently building my skills through practical projects, portfolio work and real-world digital experiments.</p></div></div></section>
-<section class="skills" id="skills"><div class="head"><div><div class="kicker">02 / WHAT I DO MYSELF</div><h2 class="title">Six ways I <i>create.</i></h2></div><p class="intro">Exactly 3 cards on the first row and 3 on the second.</p></div><div class="skill-grid">
-<div class="skill"><small>01</small><h3>Graphic Design</h3><p>Visual layouts, posters, cards, pamphlets and creative compositions.</p></div><div class="skill"><small>02</small><h3>Digital Marketing</h3><p>Content, social media thinking, SEO basics and audience-focused communication.</p></div><div class="skill"><small>03</small><h3>Photoshop</h3><p>Photo manipulation, double exposure, surreal scenes and visual storytelling.</p></div><div class="skill"><small>04</small><h3>CorelDRAW</h3><p>Clean layouts, identity pieces, print-style work and vector design.</p></div><div class="skill"><small>05</small><h3>Video Editing</h3><p>Reels and short-form edits with rhythm, transitions and platform-ready framing.</p></div><div class="skill"><small>06</small><h3>Content & Reels</h3><p>Creative content ideas that keep visual identity and communication connected.</p></div></div></section>
-<section class="projects" id="projects"><div class="head"><div><div class="kicker">03 / SELECTED WORK</div><h2 class="title">Fourteen pieces.<br><i>One visual language.</i></h2></div><p class="intro">All 14 correct projects are included. Every image is on the same 900×900 square WebP canvas.</p></div><div class="project-grid"><article class="project"><div class="pic"><img src="images/project-01.webp" alt="AI Banner" loading="lazy"></div><div class="info"><small>01 / SELECTED WORK</small><h3>AI Banner</h3><p>AI-assisted banner composition with strong visual hierarchy and promotional focus.</p></div></article>
-<article class="project"><div class="pic"><img src="images/project-02.webp" alt="AI UI Kit" loading="lazy"></div><div class="info"><small>02 / SELECTED WORK</small><h3>AI UI Kit</h3><p>Interface concept exploring reusable components, spacing, typography and consistency.</p></div></article>
-<article class="project"><div class="pic"><img src="images/project-03.webp" alt="Black & White Design" loading="lazy"></div><div class="info"><small>03 / SELECTED WORK</small><h3>Black & White Design</h3><p>Monochrome Photoshop composition built around contrast, light and tonal depth.</p></div></article>
-<article class="project"><div class="pic"><img src="images/project-04.webp" alt="Double Exposure" loading="lazy"></div><div class="info"><small>04 / SELECTED WORK</small><h3>Double Exposure</h3><p>Layered Photoshop experiment blending portrait and environment into one visual.</p></div></article>
-<article class="project"><div class="pic"><img src="images/project-05.webp" alt="Surreal Scene" loading="lazy"></div><div class="info"><small>05 / SELECTED WORK</small><h3>Surreal Scene</h3><p>Surreal Photoshop composition using scale, lighting and imagination.</p></div></article>
-<article class="project"><div class="pic"><img src="images/project-06.webp" alt="Visiting Card" loading="lazy"></div><div class="info"><small>06 / SELECTED WORK</small><h3>Visiting Card</h3><p>Professional identity piece balancing typography, information and clean presentation.</p></div></article>
-<article class="project"><div class="pic"><img src="images/project-07.webp" alt="Istanbul Pamphlet" loading="lazy"></div><div class="info"><small>07 / SELECTED WORK</small><h3>Istanbul Pamphlet</h3><p>Travel editorial layout combining destination imagery, typography and information.</p></div></article>
-<article class="project"><div class="pic"><img src="images/project-08.webp" alt="Pamphlet Design" loading="lazy"></div><div class="info"><small>08 / SELECTED WORK</small><h3>Pamphlet Design</h3><p>Promotional layout focused on visual rhythm, hierarchy and balanced imagery.</p></div></article>
-<article class="project"><div class="pic"><img src="images/project-09.webp" alt="Debit Card" loading="lazy"></div><div class="info"><small>09 / SELECTED WORK</small><h3>Debit Card</h3><p>Structured card concept exploring sleek layout, typography and visual emphasis.</p></div></article>
-<article class="project"><div class="pic"><img src="images/project-10.webp" alt="Pencil Design" loading="lazy"></div><div class="info"><small>10 / SELECTED WORK</small><h3>Pencil Design</h3><p>Creative study using pencil forms, composition and contrast.</p></div></article>
-<article class="project"><div class="pic"><img src="images/project-11.webp" alt="Registration Form" loading="lazy"></div><div class="info"><small>11 / SELECTED WORK</small><h3>Registration Form</h3><p>Practical layout focused on clarity, spacing, alignment and readability.</p></div></article>
-<article class="project"><div class="pic"><img src="images/project-12.webp" alt="Creative Artwork" loading="lazy"></div><div class="info"><small>12 / SELECTED WORK</small><h3>Creative Artwork</h3><p>Experimental artwork exploring composition, imagery and atmosphere.</p></div></article>
-<article class="project"><div class="pic"><img src="images/project-13.webp" alt="My Dream Place" loading="lazy"></div><div class="info"><small>13 / SELECTED WORK</small><h3>My Dream Place</h3><p>Destination-inspired composition built around mood, place and visual storytelling.</p></div></article>
-<article class="project"><div class="pic"><img src="images/project-14.webp" alt="Graphic Design Project" loading="lazy"></div><div class="info"><small>14 / SELECTED WORK</small><h3>Graphic Design Project</h3><p>Selected graphic-design piece showcasing composition and polished presentation.</p></div></article></div></section>
-<section class="water"><div class="surface"></div><div class="beam"></div><div class="beam"></div><div class="beam"></div>
-<svg class="fish fa" viewBox="0 0 180 80"><path d="M18 40c25-30 70-33 105-8 13 9 26 9 39 8-13 1-26 0-39 8-35 25-80 22-105-8Z" fill="#b4eee6"/><path d="M17 40 2 19l6 21-6 21Z" fill="#82c5bd"/><circle cx="145" cy="34" r="3" fill="#061012"/></svg>
-<svg class="fish fb" viewBox="0 0 180 80"><path d="M18 40c25-30 70-33 105-8 13 9 26 9 39 8-13 1-26 0-39 8-35 25-80 22-105-8Z" fill="#b4eee6"/><path d="M17 40 2 19l6 21-6 21Z" fill="#82c5bd"/><circle cx="145" cy="34" r="3" fill="#061012"/></svg>
-<svg class="fish fc" viewBox="0 0 180 80"><path d="M18 40c25-30 70-33 105-8 13 9 26 9 39 8-13 1-26 0-39 8-35 25-80 22-105-8Z" fill="#b4eee6"/><path d="M17 40 2 19l6 21-6 21Z" fill="#82c5bd"/><circle cx="145" cy="34" r="3" fill="#061012"/></svg>
-<div class="bubble b1"></div><div class="bubble b2"></div><div class="bubble b3"></div><div class="water-in"><div class="kicker">04 / A LITTLE ATMOSPHERE</div><h2 class="title">Where ideas <i>move.</i></h2><p class="intro">A subtle underwater environment becomes part of the interface — light, reflections, drifting forms and depth — rather than random decorative stickers.</p></div></section>
-<section class="tools"><div class="head"><div><div class="kicker">05 / TOOLS I USE</div><h2 class="title">My creative <i>toolkit.</i></h2></div><p class="intro">Design, editing, marketing and web workflow tools.</p></div><div class="toolbox"><span class="tool">Adobe Photoshop</span><span class="tool">CorelDRAW</span><span class="tool">CapCut</span><span class="tool">Canva</span><span class="tool">Digital Marketing</span><span class="tool">SEO</span><span class="tool">Social Media</span><span class="tool">GitHub</span><span class="tool">Vercel</span><span class="tool">Antigravity</span><span class="tool">VS Code</span></div></section>
-<section class="blog"><div class="head"><div><div class="kicker">06 / JOURNAL</div><h2 class="title">The <i>Blog.</i></h2></div><p class="intro">A growing space for practical digital marketing, SEO, design and creative-work notes.</p></div><div class="blogbox"><div class="blog-art"><h3>How SEO Helps Small Businesses Get Found Online</h3></div><div class="blog-copy"><p>Practical notes on search visibility, content and the small actions that can help a business become easier to discover online.</p><a href="blog/">Read the article →</a></div></div></section>
-<section class="contact" id="contact"><div class="kicker">07 / LET'S TALK</div><h2 class="title">Have an idea?<br><i>Let's make it real.</i></h2><p class="intro">For design work, digital marketing opportunities, collaborations or creative projects, reach out.</p><a class="mail" href="mailto:ilmabano172@gmail.com">ilmabano172@gmail.com</a></section>
-<footer><span>© 2026 ILMA BANO</span><span>GRAPHIC DESIGN × DIGITAL MARKETING</span></footer>
-</body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ilma Bano — Graphic Designer & Digital Marketer</title>
+<meta name="description" content="Portfolio of Ilma Bano, graphic designer and digital marketer. Print design, photo manipulation, brand identity, and UI concepts.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="grain"></div>
+
+<header class="nav">
+  <a href="#top" class="nav-mark">Ilma Bano</a>
+  <nav class="nav-links">
+    <a href="#work">Work</a>
+    <a href="#about">About</a>
+    <a href="#do">What I Do</a>
+    <a href="#blog">Blog</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <a href="#contact" class="nav-cta">Let's talk</a>
+  <button class="nav-toggle" aria-label="Open menu">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-text">
+      <p class="hero-eyebrow">Graphic Designer &amp; Digital Marketer</p>
+      <h1 class="hero-title">Ilma&nbsp;Bano</h1>
+      <p class="hero-sub">I design posters, brand kits, and photo compositions that stay simple, clean, and easy to remember.</p>
+      <div class="hero-actions">
+        <a href="#work" class="btn btn-primary">View my work</a>
+        <a href="#contact" class="btn btn-ghost">Get in touch</a>
+      </div>
+    </div>
+
+    <div class="hero-stack" id="heroStack">
+      <div class="stack-card card-a"><img src="images/7.webp" alt="Surreal composition with a large clock over mountains" loading="eager"></div>
+      <div class="stack-card card-b"><img src="images/12.webp" alt="Istanbul travel poster design" loading="eager"></div>
+      <div class="stack-card card-c"><img src="images/11.webp" alt="Ilvora brand identity card design" loading="eager"></div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="about-grid">
+      <div class="about-lead">
+        <h2>About</h2>
+      </div>
+      <div class="about-body">
+        <p>I'm a self-taught graphic designer and digital marketer, currently building my craft one project at a time. My design education came from practice — CorelDRAW, Photoshop, and hours spent figuring out what looks right and why.</p>
+        <p>Alongside design, I work on digital marketing and short-form video, editing reels and content in CapCut for social platforms.</p>
+        <ul class="skill-list">
+          <li>Graphic Design</li>
+          <li>Digital Marketing</li>
+          <li>CorelDRAW</li>
+          <li>Photoshop</li>
+          <li>Video Editing</li>
+          <li>CapCut</li>
+          <li>Reels &amp; Content Creation</li>
+          <li>12th Pass</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHAT I DO -->
+  <section class="do" id="do">
+    <h2>What I do</h2>
+    <div class="do-grid">
+      <div class="do-card">
+        <h3>Graphic Design</h3>
+        <p>Posters, pamphlets, and print layouts, taken from a blank page to a final, print-ready file.</p>
+      </div>
+      <div class="do-card">
+        <h3>Digital Marketing</h3>
+        <p>Content planning and campaign visuals built for how people actually scroll on social platforms.</p>
+      </div>
+      <div class="do-card">
+        <h3>Photo Manipulation</h3>
+        <p>Surreal and double-exposure composites, built layer by layer in Photoshop.</p>
+      </div>
+      <div class="do-card">
+        <h3>Brand Identity</h3>
+        <p>Logos, visiting cards, and small brand kits for individuals and small businesses.</p>
+      </div>
+      <div class="do-card">
+        <h3>Video Editing</h3>
+        <p>Reels and short-form video, cut and paced for CapCut and mobile viewing.</p>
+      </div>
+      <div class="do-card">
+        <h3>UI Concepts</h3>
+        <p>Simple mobile app and interface mockups for early-stage product ideas.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- WORK -->
+  <section class="work" id="work">
+    <div class="work-head">
+      <h2>Selected work</h2>
+      <p>A set of design and photo-editing projects, shown full and uncropped.</p>
+    </div>
+
+    <div class="work-grid" id="workGrid">
+
+      <article class="work-card">
+        <div class="work-frame"><img src="images/1.webp" alt="Istanbul travel pamphlet design" loading="lazy"></div>
+        <div class="work-info">
+          <h3>Istanbul Travel Pamphlet</h3>
+          <p class="work-cat">Print Design</p>
+          <p class="work-desc">A travel pamphlet laying out Istanbul's landmarks, food, and culture for visitors, in a clear, scannable format.</p>
+        </div>
+      </article>
+
+      <article class="work-card">
+        <div class="work-frame"><img src="images/2.webp" alt="Makkah Shareef architectural illustration" loading="lazy"></div>
+        <div class="work-info">
+          <h3>Makkah Shareef Illustration</h3>
+          <p class="work-cat">Illustration</p>
+          <p class="work-desc">An architectural illustration of the Kaaba, composed for a devotional travel piece.</p>
+        </div>
+      </article>
+
+      <article class="work-card">
+        <div class="work-frame"><img src="images/3.webp" alt="Branded pencil set product mockup" loading="lazy"></div>
+        <div class="work-info">
+          <h3>Pencil Set Mockup</h3>
+          <p class="work-cat">Product / Branding</p>
+          <p class="work-desc">A branded stationery mockup for a set of pencils, presented on a bold, high-contrast background.</p>
+        </div>
+      </article>
+
+      <article class="work-card">
+        <div class="work-frame"><img src="images/4.webp" alt="App interface concept over a cloudy sky" loading="lazy"></div>
+        <div class="work-info">
+          <h3>Sky Interface Concept</h3>
+          <p class="work-cat">UI Concept</p>
+          <p class="work-desc">A quiet, atmospheric concept blending an app screen with a soft, overcast sky.</p>
+        </div>
+      </article>
+
+      <article class="work-card">
+        <div class="work-frame"><img src="images/5.webp" alt="Registration form design" loading="lazy"></div>
+        <div class="work-info">
+          <h3>Registration Form</h3>
+          <p class="work-cat">Print / Form Design</p>
+          <p class="work-desc">A clean registration form layout with clear fields and a simple visual hierarchy.</p>
+        </div>
+      </article>
+
+      <article class="work-card">
+        <div class="work-frame"><img src="images/6.webp" alt="Nusrat Fateh Ali Khan DVD cover design" loading="lazy"></div>
+        <div class="work-info">
+          <h3>Music DVD Cover</h3>
+          <p class="work-cat">Packaging Design</p>
+          <p class="work-desc">Cover and disc artwork for a "Legendary Hits" music compilation.</p>
+        </div>
+      </article>
+
+      <article class="work-card">
+        <div class="work-frame"><img src="images/7.webp" alt="Surreal composition with a giant clock and hot air balloons" loading="lazy"></div>
+        <div class="work-info">
+          <h3>Time Beyond Reality</h3>
+          <p class="work-cat">Photo Manipulation</p>
+          <p class="work-desc">A surreal composite blending a giant clock, mountains, and hot air balloons into one scene.</p>
+        </div>
+      </article>
+
+      <article class="work-card">
+        <div class="work-frame"><img src="images/8.webp" alt="Double exposure portrait with forest and a house" loading="lazy"></div>
+        <div class="work-info">
+          <h3>Double Exposure Portrait</h3>
+          <p class="work-cat">Photo Manipulation</p>
+          <p class="work-desc">An emotive double-exposure piece, merging a silhouette with nature and a lone house.</p>
+        </div>
+      </article>
+
+      <article class="work-card">
+        <div class="work-frame"><img src="images/9.webp" alt="Wedding photo manipulation" loading="lazy"></div>
+        <div class="work-info">
+          <h3>Wedding Edit</h3>
+          <p class="work-cat">Photo Editing</p>
+          <p class="work-desc">A candid wedding moment enhanced with soft-focus tones and considered color grading.</p>
+        </div>
+      </article>
+
+      <article class="work-card">
+        <div class="work-frame"><img src="images/10.webp" alt="Mohd Ibad visiting card design" loading="lazy"></div>
+        <div class="work-info">
+          <h3>Mohd Ibad — Visiting Card</h3>
+          <p class="work-cat">Brand Identity</p>
+          <p class="work-desc">A two-sided business card design for a graphic designer, in a navy and grey palette.</p>
+        </div>
+      </article>
+
+      <article class="work-card">
+        <div class="work-frame"><img src="images/11.webp" alt="Ilvora brand identity design" loading="lazy"></div>
+        <div class="work-info">
+          <h3>Ilvora — Brand Identity</h3>
+          <p class="work-cat">Brand Identity</p>
+          <p class="work-desc">A logo and visiting card set for "Ilvora Digital," pairing a diamond emblem with a soft, minimal card.</p>
+        </div>
+      </article>
+
+      <article class="work-card">
+        <div class="work-frame"><img src="images/12.webp" alt="Istanbul travel promotional poster" loading="lazy"></div>
+        <div class="work-info">
+          <h3>Istanbul Travel Poster</h3>
+          <p class="work-cat">Promotional Design</p>
+          <p class="work-desc">A social-media-ready poster promoting Istanbul tour bookings.</p>
+        </div>
+      </article>
+
+      <article class="work-card">
+        <div class="work-frame"><img src="images/13.webp" alt="Nature Stay mobile app UI concept" loading="lazy"></div>
+        <div class="work-info">
+          <h3>Nature Stay — App UI</h3>
+          <p class="work-cat">UI / UX Concept</p>
+          <p class="work-desc">A three-screen mobile app concept for browsing and booking nature stays.</p>
+        </div>
+      </article>
+
+      <article class="work-card">
+        <div class="work-frame"><img src="images/15.webp" alt="Travel World promotional banner" loading="lazy"></div>
+        <div class="work-info">
+          <h3>Travel World Banner</h3>
+          <p class="work-cat">Promotional Design</p>
+          <p class="work-desc">A wide banner ad inviting viewers to explore the world, built for web placement.</p>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- BLOG -->
+  <section class="blog" id="blog">
+    <div class="work-head">
+      <h2>Blog</h2>
+      <p>Notes on design and marketing — new posts coming soon.</p>
+    </div>
+    <div class="blog-grid">
+      <article class="blog-card">
+        <span class="blog-tag">Design</span>
+        <h3>How I plan a poster before opening Photoshop</h3>
+        <p>Coming soon</p>
+      </article>
+      <article class="blog-card">
+        <span class="blog-tag">Marketing</span>
+        <h3>What makes a reel worth finishing</h3>
+        <p>Coming soon</p>
+      </article>
+      <article class="blog-card">
+        <span class="blog-tag">Process</span>
+        <h3>Building a double-exposure image, step by step</h3>
+        <p>Coming soon</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="contact-inner">
+      <h2>Let's work together</h2>
+      <p>Have a project in mind? Message me on WhatsApp or Instagram, or send an email — I reply quickly.</p>
+      <div class="contact-links">
+        <a href="https://wa.me/916386511073" target="_blank" rel="noopener" class="contact-link">
+          <span class="contact-label">WhatsApp</span>
+          <span class="contact-value">+91 63865 11073</span>
+        </a>
+        <a href="https://instagram.com/the.ilma_" target="_blank" rel="noopener" class="contact-link">
+          <span class="contact-label">Instagram</span>
+          <span class="contact-value">@the.ilma_</span>
+        </a>
+        <a href="mailto:ilmabano172@gmail.com" class="contact-link">
+          <span class="contact-label">Email</span>
+          <span class="contact-value">ilmabano172@gmail.com</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p>© <span id="year"></span> Ilma Bano. All work shown belongs to the designer.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
